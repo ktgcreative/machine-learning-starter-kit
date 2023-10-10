@@ -43,23 +43,37 @@ Data is divided into training and testing sets. 80% is used for training, and 20
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-## 🤖 Defining Models
+Of course! Here's the edited section in markdown, tailored to your provided format:
 
-Three models are predefined for you:
+---
 
-- Decision Tree
-- Random Forest
-- Gradient Boosting
+🤖 **Defining Models and Experimenting with Hyperparameters**
 
-Feel free to add more from scikit-learn's vast library.
+Below, we've provided a set of models with different hyperparameters. These models serve as a starting point for your machine learning journey:
+
+Each have `max_depth` and `min_samples_split` adjustments and some are default
+
+- **Decision Tree**
+  
+- **Random Forest**
+  
+- **Gradient Boosting**
 
 ```python
 models = {
-    "Decision Tree": DecisionTreeClassifier(max_depth=5, min_samples_split=10, random_state=42),
-    "Random Forest": RandomForestClassifier(random_state=42, min_samples_split=10, max_depth=5),
+    "Decision Tree": DecisionTreeClassifier(random_state=42),
+    "Decision Tree 2": DecisionTreeClassifier(max_depth=5, min_samples_split=10, random_state=42),
+
+    "Random Forest": RandomForestClassifier(random_state=42),
+    "Random Forest 2": RandomForestClassifier(random_state=42, min_samples_split=10, max_depth=5),
+
     "Gradient Boosting": GradientBoostingClassifier(random_state=42, min_samples_split=10, max_depth=5),
 }
 ```
+
+Feel free to tweak these hyperparameters, add new ones, or introduce other models from scikit-learn. Experimentation is key to finding the best model for your data!
+
+---
 
 ## 📊 Model Evaluation Function
 
