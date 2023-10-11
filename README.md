@@ -43,8 +43,6 @@ Data is divided into training and testing sets. 80% is used for training, and 20
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-Of course! Here's the edited section in markdown, tailored to your provided format:
-
 ---
 
 🤖 **Defining Models and Experimenting with Hyperparameters**
